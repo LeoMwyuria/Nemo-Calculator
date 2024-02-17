@@ -1,0 +1,105 @@
+input{
+    outline-style: none;
+    border: 2px solid purple;
+}
+.btn:hover{
+    background-color: purple;
+    cursor: pointer;
+}
+
+.main-div{
+   
+    width: 400px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    gap: 10px;
+  
+    
+}
+.organ-div{
+    border: 3px solid blue;
+    font-family: 'Open Sans';
+    color: blue;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.50);
+   
+}
+.header{
+    font-family: 'Open Sans';
+    font-size: 50px;
+    text-align: center;
+    color: blue;
+    border: 3px solid blue;
+    width: 100%;
+}
+.btn{
+    background-color: blue;
+    color: white;
+    font-weight: 400;
+}
+header{
+    display: none;
+}
+.results-div{
+    overflow: auto;
+    max-height: 90px;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+ 
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+@media (width > 1030px){
+    .header{
+        display: none;
+    }
+    .main-div{
+   
+        width: 100%;
+        height: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns:  auto auto auto ;
+        grid-template-rows: 200px 200px 200px;
+        justify-content: center;
+        gap: 40px;
+        
+       
+        
+    }
+    header{
+        display: block;
+        font-family: 'Open Sans';
+        font-size: 50px;
+        text-align: center;
+        color: blue;
+        border: 3px solid blue;
+        width: 100%;
+        
+    }
+    .organ-div{
+        width: 300px;
+    }
+
+}
